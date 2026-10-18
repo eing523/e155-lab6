@@ -1,5 +1,5 @@
 // DS1722.h
-// TODO: <YOUR NAME>
-// TODO: <YOUR EMAIL>
-// TODO: <DATE>
-// TODO: <SHORT DESCRIPTION OF WHAT THIS FILE DOES>
+// Emily Ing
+// eing@g.hmc.edu
+// 10/17/2026
+// This file is the .h file for the DS implementation
