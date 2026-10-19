@@ -14,8 +14,8 @@ void initSPI(int br, int cpol, int cpha){
     // configure gpio for mosi, miso, sck
     pinMode(MISO_PIN, GPIO_ALT);
     pinMode(MOSI_PIN, GPIO_ALT);
-    pinMode(SCLK_PIN, GPIO_ALT);
-    pinMode(CS_PIN, GPIO_OUTPUT);
+    pinMode(SCK_PIN, GPIO_ALT);
+    pinMode(CE_PIN, GPIO_OUTPUT); // clip select aka chip enable
 
 
     // from datasheet we get the pin name that corresponds to miso, sck, and mosi (p. 56). we look at the device header for the functions of the others
