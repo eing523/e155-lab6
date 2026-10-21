@@ -41,6 +41,10 @@ float readDS(){
     spiSendReceive(0x02); // from DS datasheet
     float msb = spiSendReceive(0x00);
     digitalWrite(CE_PIN, PIO_LOW);
+  
+    if (msb >= 128) {
+      msb -= 128;
+    }
 
     return msb + (lsb / 256.0); // from DS datasheet; dividing lsb by 256 since we have 2^8 positions and lsb is a fraction
 
